@@ -1,9 +1,18 @@
-import React from 'react';
-import { signOut } from 'firebase/auth';
+import React, { useEffect } from 'react';
+import { signOut, onAuthStateChanged } from 'firebase/auth';
 import { auth } from "../firebase.js"
 import { useNavigate } from 'react-router-dom';
 export default function Homepage() {
     const navigate = useNavigate();
+
+    useEffect(() => {
+        auth.onAuthStateChanged((user) => {
+            if (!user) {
+                navigate('/')
+            }
+        })
+    }, [])
+
     const handleSignOut = () => {
         signOut(auth).then(() => {
             navigate("/");
