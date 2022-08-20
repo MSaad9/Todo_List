@@ -1,0 +1,120 @@
+.welcome {
+    height: 100vh;
+    width: 100vw;
+    background-color: #BECBDE;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.welcome>h1 {
+    font-family: "Changa One";
+    font-weight: normal;
+    font-size: 100px;
+    right: 220px;
+    top: 50px;
+    position: absolute;
+    color: white;
+}
+
+.login-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 120px;
+    right: 150px;
+    top: 180px;
+    background: #ffffff;
+    border-radius: 15px;
+}
+
+.login-container>input {
+    height: 40px;
+    width: 150%;
+    border: 1px solid gray;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+
+
+.login-container>button {
+    padding: 5px 20px;
+    border: none;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+}
+
+.register-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 150px;
+    right: 150px;
+    top: 200px;
+    background: #ffffff;
+    border-radius: 15px;
+}
+
+.register-container>input {
+    height: 40px;
+    width: 200%;
+    border: 1px solid gray;
+    outline: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.register-container>button {
+    padding: 5px 5px;
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+
+}
+
+.register-button {
+    /* background: linear-gradient(122.19deg, #da2079 1.89%, #2a00d5 113.56%); */
+    font-size: 20px;
+    margin-top: 40px;
+    font-family: "Changa One";
+    font-weight: normal;
+    color: white;
+
+}
+
+.sign-in-button {
+    /* background: linear-gradient(122.19deg, #da2079 1.89%, #2a00d5 113.56%); */
+    font-size: 20px;
+    margin-top: 60px;
+    font-family: "Changa One";
+    font-weight: normal;
+    color: white;
+
+}
+
+.create-account-button {
+    background: none;
+    margin-top: 10px;
+}
+
+.todo-svg {
+    position: absolute;
+    bottom: 50px;
+    /* left: 0px; */
+    right: 700px;
+    /* padding-left: 0px; */
+    transform: scale(0.7);
+}
